@@ -1,0 +1,159 @@
+<div class="the-top">
+  <nav class="navvy">
+    <div class="d-flex flex-column justify-content-between align-items-center">
+      <i class="bi bi-suit-heart m-4"></i>
+
+      <div class="d-flex for-right m-4">
+        <div>
+        <h5 class="journal">Journal</h5>
+        <div class="border-btm">
+
+        </div>
+        </div>
+        <div>
+        <i class="bi bi-text-left"></i>
+
+        </div>
+      </div>
+      <div class="header-text text-center pt-3">
+        <a href=""><h1 style="text-decoration:none;">article lounge</h1></a>
+      </div>
+  </nav>
+</div>
+
+<div class="header">
+  <div class="d-flex justify-content-center align-items-center mx-auto large-text">
+    Thousands of rated articles
+  </div>
+</div>
+<div class="searchy">
+  <div class="search-bar text-center">
+    <input type="text" placeholder="Search articles or categories..." class="searching p-3">
+  </div>
+</div>
+
+
+<div class="card-selection">
+<!--   <div class="d-flex justify-content-center card-container"> -->
+    <div class="horizontal-scroll-wrapper squares">
+    <div class="card-outer-first">
+      <div class="create-card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80" alt="">
+          <h6>STAFF PICK</h6>
+        </div>
+        <div class="card-bottom">
+          <div class="card-content">
+            <h5>Title</h5>
+            <div class="d-flex justify-content-between mt-5">
+              <div class="card-details">
+                <h6>Price $$</h6>
+                <h6>Rated: Good</h6>
+              </div>
+    <!--           <div class="flex-row-reverse"> -->
+                <i class="bi bi-emoji-smile"></i>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% @selection.each do |card| %>
+    <div class="card-outer">
+      <div class="create-card">
+        <div class="card-image">
+          <img src=<%= card.url %> alt="">
+          <h6>STAFF PICK</h6>
+        </div>
+
+        <div class="card-bottom">
+          <div class="card-content">
+            <h5><%= card.name %></h5>
+            <div class="d-flex justify-content-between mt-5">
+              <div class="card-details">
+                <h6>Price <%= card.price %></h6>
+                <h6>Rated: <%= card.rated %></h6>
+              </div>
+    <!--           <div class="flex-row-reverse"> -->
+                <i class="bi bi-emoji-smile"></i>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+              <% end %>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="middle-nav d-flex justify-content-between">
+    <h1 class="my-5">Categories</h1>
+    <div class="m-3 d-flex circle-selector">
+      <div class="tech d-flex">
+        <i class="bi bi-circle-fill"></i>
+        <p class="px-3">Tech</p>
+      </div>
+      <div class="how-to d-flex">
+        <i class="bi bi-circle"></i>
+        <p class="px-3">How to</p>
+      </div>
+      <div class="scholar d-flex">
+        <i class="bi bi-circle"></i>
+        <p class="px-3">Scholar</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="css-card-grid">
+      <% @category.each do |category| %>
+    <div class="category-card mb-4">
+      <div class="category-card-image">
+        <img src= <%= category.url %> alt="">
+      </div>
+      <div style="font-size: 26px;">
+        <%= category.name %>
+      </div>
+    </div>
+      <% end %>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <div  class="left-side-upper">
+        <h5 class="pb-2">Articles for us, for you and for everybody.</h5>
+        <h5 class="pt-1">Article lounge</h5>
+        <div class="d-flex icons">
+          <i class="bi bi-facebook ind-icon"></i>
+          <i class="bi bi-twitter ind-icon"></i>
+          <i class="bi bi-instagram ind-icon"></i>
+        </div>
+      </div>
+      <div class="right-side-upper">
+        <h5 class="pb-2">Journal</h5>
+        <p class="pt-1">Discover the best articles and everything you need to know about the everthing in the world ever.</p>
+        <div class="d-flex">
+          <div class="text-left">
+            <h5 class="journal" style="font-size:16px;position: relative;right: 12px;">Journal</h5>
+          <div class="border-btm" style="position: relative;right: 12px;"></div>
+          </div>
+          <div class="yas">
+            <i class="bi bi-arrow-up-right"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-between btm">
+      <div>
+        <h6 style="color:#919191">© Article Lounge</h6>
+      </div>
+      <div class="bi bi-suit-heart" style="font-size:36px;position: relative;bottom: 8px;">
+
+      </div>
+    </div>
+  </div>
+</div>

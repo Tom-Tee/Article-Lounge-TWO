@@ -1,0 +1,106 @@
+.navvy {
+  height: 84px;
+  position:fixed;
+  top: 0;
+  background-color: #222222;
+  color:white;
+  width: 100%;
+  z-index: 1;
+}
+
+.large-text {
+  width: 600px;
+  font-size: 78px;
+  padding-left: 50px;
+}
+
+.searchy {
+  height: 142px;
+  background-color: #222222;
+}
+
+.search-bar {
+  padding-top: 38px;
+}
+
+.searching {
+  width: 95%;
+  background-color: black;
+  border-radius: 32px;
+  color:white;
+  font-size: 24px;
+  // outline: 0;
+  border: 1px solid black;
+  // margin-bottom:30px;
+}
+
+::placeholder {
+  color:#AAAAAA;
+}
+
+.header {
+  margin-top:84px;
+  height: 330px;
+  background-color: #222222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 72px 24px 60px;
+}
+
+nav h5 {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+nav .bi-suit-heart {
+  position:absolute;
+  left: 10px;
+  font-size: 32px;
+}
+
+
+.for-right {
+  position:absolute;
+  right: 10px;
+  font-size: 32px;
+}
+
+.journal {
+  margin:12px;
+  padding-right: 20px;
+  // text-decoration: underline;
+  // text-underline-offset: 8px;
+  transition: top 300ms ease;
+  border-color: rgb(255, 255, 255) !important;
+  padding-bottom: 6px;
+  width: 58px;
+  margin-right: 32px;
+}
+
+.border-btm {
+  border-bottom: 1px solid white;
+  position: relative;
+  top: -14px;
+  width: 58px;
+  margin-left: 14px;
+  transition: top 250ms ease;
+}
+
+.journal:hover + .border-btm {
+    top:-24px;
+  }
+
+.journal:hover {
+      cursor: pointer;
+}
+
+.bi-suit-heart {
+  transition: 0.3s;
+
+}
+
+.bi-suit-heart:hover {
+  font-size: 26px;
+  cursor: pointer;
+}

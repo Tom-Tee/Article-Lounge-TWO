@@ -1,0 +1,2 @@
+class CategoryCard < ApplicationRecord
+end
