@@ -9,56 +9,21 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 
-console.log("hello")
+var btnContainer = document.querySelector(".circle-selector");
 
-// const dragHorizontal = () => {
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.querySelectorAll(".selection");
 
-//       const slider = document.querySelector(".horizontal-scroll-wrapper");
-//       const preventClick = (e) => {
-//         e.preventDefault();
-//         e.stopImmediatePropagation();
-//       }
-//       let isDown = false;
-//       let isDragged = false;
-//       let startX;
-//       let scrollLeft;
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("bi-circle-fill");
+    current[0].className = current[0].className.replace(" bi-circle-fill", "bi-circle");
+    this.className += "bi-circle-fill";
+  });
+}
 
-//       slider.addEventListener("mousedown", e => {
-//         isDown = true;
-//         slider.classList.add("active");
-//         startX = e.pageX - slider.offsetLeft;
-//         scrollLeft = slider.scrollLeft;
-//       });
-//       slider.addEventListener("mouseleave", () => {
-//         isDown = false;
-//         slider.classList.remove("active");
-//       });
-//       slider.addEventListener("mouseup", (e) => {
-//         isDown = false;
-//         const elements = document.querySelectorAll("a");
-//         if(isDragged){
-//             for(let i = 0; i<elements.length; i++){
-//                   elements[i].addEventListener("click", preventClick);
-//             }
-//         }
-//         else{
-//             for(let i = 0; i<elements.length; i++){
-//                   elements[i].removeEventListener("click", preventClick);
-//             }
-//         }
-//         slider.classList.remove("active");
-//         isDragged =  false;
-//       });
-//       slider.addEventListener("mousemove", e => {
-//         if (!isDown) return;
-//         isDragged =  true;
-//         e.preventDefault();
-//         const x = e.pageX - slider.offsetLeft;
-//         const walk = (x - startX) * 2;
-//         slider.scrollLeft = scrollLeft - walk;
-//         console.log(walk);
-//       });
-// }
+
 
 
 Rails.start()

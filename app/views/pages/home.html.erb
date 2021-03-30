@@ -35,29 +35,7 @@
 
 <div class="card-selection">
 <!--   <div class="d-flex justify-content-center card-container"> -->
-    <div class="horizontal-scroll-wrapper squares">
-    <div class="card-outer-first">
-      <div class="create-card">
-        <div class="card-image">
-          <img src="https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80" alt="">
-          <h6>STAFF PICK</h6>
-        </div>
-        <div class="card-bottom">
-          <div class="card-content">
-            <h5>Title</h5>
-            <div class="d-flex justify-content-between mt-5">
-              <div class="card-details">
-                <h6>Price $$</h6>
-                <h6>Rated: Good</h6>
-              </div>
-    <!--           <div class="flex-row-reverse"> -->
-                <i class="bi bi-emoji-smile"></i>
-              <!-- </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="horizontal-scroll-wrapper squares test">
   <% @selection.each do |card| %>
     <div class="card-outer">
       <div class="create-card">
@@ -92,15 +70,15 @@
     <h1 class="my-5">Categories</h1>
     <div class="m-3 d-flex circle-selector">
       <div class="tech d-flex">
-        <i class="bi bi-circle-fill"></i>
+        <i class="selection i bi-circle-fill"></i>
         <p class="px-3">Tech</p>
       </div>
       <div class="how-to d-flex">
-        <i class="bi bi-circle"></i>
+        <i class="selection bi bi-circle"></i>
         <p class="px-3">How to</p>
       </div>
       <div class="scholar d-flex">
-        <i class="bi bi-circle"></i>
+        <i class="selection bi bi-circle"></i>
         <p class="px-3">Scholar</p>
       </div>
     </div>

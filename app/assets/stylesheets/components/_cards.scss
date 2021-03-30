@@ -3,6 +3,9 @@
   padding: 40px;
   color: rgb(68, 68, 68);
   cursor: pointer;
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .card-image img {
@@ -64,47 +67,57 @@ h6 {
   // box-shadow: 2px 2px 2px 2px black
 }
 
-.horizontal-scroll-wrapper {
-  width: 480px;
-  height: 1350px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
+// .horizontal-scroll-wrapper {
+//   width: 480px;
+//   height: 1350px;
+//   overflow-y: auto;
+//   overflow-x: scroll;
+//   white-space: nowrap;
+// }
 
-.horizontal-scroll-wrapper > div {
-  width: 480px;
-  height: 400px;
-}
+// .horizontal-scroll-wrapper > div {
+//   width: 480px;
+//   height: 400px;
+// }
 
-.horizontal-scroll-wrapper {
-  transform: rotate(-90deg);
-  transform-origin: right top;
-  margin-top:-48px;
-}
+// .horizontal-scroll-wrapper {
+//   transform: rotate(-90deg);
+//   transform-origin: right top;
+//   margin-top:-48px;
+// }
 
-.horizontal-scroll-wrapper > div {
-  transform: rotate(90deg);
-  transform-origin: right top;
-}
+// .horizontal-scroll-wrapper > div {
+//   transform: rotate(90deg);
+//   transform-origin: right top;
+// }
 
-.horizontal-scroll-wrapper {
-  transform:rotate(-90deg) translateY(-480px);
+// .horizontal-scroll-wrapper {
+//   transform:rotate(-90deg) translateY(-480px);
+// }
+
+.test {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  .card-outer {
+    display: inline-block;
+  }
 }
 
 .card-outer-first {
   margin-top: 440px;
 }
 
-.card-selection {
-  height: 480px;
-  padding: 0;
-  margin-top: 50px;
-}
+// .card-selection {
+//   height: 480px;
+//   padding: 0;
+//   margin-top: 50px;
+// }
 
 .card-image h6 {
   position: absolute;
-  right: 108px;
-  top: 194px;
+  left: 296px;
+  top: 219px;
   color: #717171;
   z-index: 1;
   background-color: white;
