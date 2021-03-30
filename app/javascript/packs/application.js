@@ -9,19 +9,42 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 
-var btnContainer = document.querySelector(".circle-selector");
+// var btnContainer = document.querySelectorAll(".selection");
 
 // Get all buttons with class="btn" inside the container
-var btns = btnContainer.querySelectorAll(".selection");
+var btns = document.querySelectorAll(".selection");
 
 // Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("bi-circle-fill");
-    current[0].className = current[0].className.replace(" bi-circle-fill", "bi-circle");
-    this.className += "bi-circle-fill";
-  });
+
+
+btns.forEach((button) => {
+  button.addEventListener("click", function() {
+    console.log("test")
+    if (button.classList.contains("bi-circle-fill")) {
+      button.classList.replace("bi-circle-fill", "bi-circle")
+      } else if (button.classList.contains("bi-circle")) {
+        button.classList.replace("bi-circle", "bi-circle-fill")
+      }
+    })
+})
+
+    // btn[i].addEventListener("click", function() {
+    // console.log("test")
+    // if (button.classList.contains("bi-circle-fill")) {
+    //   button.classList.replace("bi-circle-fill", "bi-circle")
+    //   } else if (button.classList.contains("bi-circle")) {
+    //     button.classList.replace("bi-circle", "bi-circle-fill")
+    //   }
+    // })
 }
+
+
+  // btns[i].addEventListener("click", function() {
+  //   console.log("clicking")
+  //   var current = document.getElementsByClassName("bi-circle-fill");
+  //   current[0].className = current[0].className.replace(" bi-circle-fill", "bi-circle");
+  //   this.className += "bi-circle-fill";
+  // });
 
 
 
