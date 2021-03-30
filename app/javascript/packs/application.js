@@ -9,42 +9,24 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 
-// var btnContainer = document.querySelectorAll(".selection");
+const buttonSelectorFunction = () => {
 
-// Get all buttons with class="btn" inside the container
-var btns = document.querySelectorAll(".selection");
-
-// Loop through the buttons and add the active class to the current/clicked button
-
-
-btns.forEach((button) => {
-  button.addEventListener("click", function() {
-    console.log("test")
-    if (button.classList.contains("bi-circle-fill")) {
-      button.classList.replace("bi-circle-fill", "bi-circle")
-      } else if (button.classList.contains("bi-circle")) {
-        button.classList.replace("bi-circle", "bi-circle-fill")
-      }
-    })
-})
-
-    // btn[i].addEventListener("click", function() {
-    // console.log("test")
-    // if (button.classList.contains("bi-circle-fill")) {
-    //   button.classList.replace("bi-circle-fill", "bi-circle")
-    //   } else if (button.classList.contains("bi-circle")) {
-    //     button.classList.replace("bi-circle", "bi-circle-fill")
-    //   }
-    // })
+  let btns = document.querySelectorAll(".selection");
+  // Loop through the buttons and add the active class to the current/clicked button
+  btns.forEach((button) => {
+    button.addEventListener("click", function() {
+      // console.log("test")
+      let selected = document.querySelector(".bi-circle-fill")
+      if (button.classList.contains("bi-circle-fill")) {
+        button.classList.replace("bi-circle-fill", "bi-circle")
+        } else if (button.classList.contains("bi-circle")) {
+          button.classList.replace("bi-circle", "bi-circle-fill")
+          selected.classList.replace("bi-circle-fill", "bi-circle")
+        }
+      })
+  })
 }
 
-
-  // btns[i].addEventListener("click", function() {
-  //   console.log("clicking")
-  //   var current = document.getElementsByClassName("bi-circle-fill");
-  //   current[0].className = current[0].className.replace(" bi-circle-fill", "bi-circle");
-  //   this.className += "bi-circle-fill";
-  // });
 
 
 
@@ -54,6 +36,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 document.addEventListener("turbolinks:load", () => {
-  // dragHorizontal()
-  // fitMapToMarkers();
+  buttonSelectorFunction()
 });
