@@ -84,14 +84,20 @@
     </div>
   </div>
 
+  <% random_array = [] %>
+
+  <% 14.times do %>
+  <% random_array << rand(100..1500) %>
+  <% end %>
+
   <div class="css-card-grid">
       <% @category.each do |category| %>
     <div class="category-card mb-4">
       <div class="category-card-image">
         <img src= <%= category.url %> alt="">
       </div>
-      <div style="font-size: 26px;">
-        <%= category.name %>
+      <div class="d-flex pt-2" style="font-size: 26px;">
+        <%= category.name %> <h6 class="random-number"><%= random_array.sample %></h6>
       </div>
     </div>
       <% end %>
