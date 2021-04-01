@@ -68,7 +68,7 @@ CategoryCard.create(
 
 CategoryCard.create(
   name: "Politics",
-  url: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
+  url: "https://images.unsplash.com/photo-1607778102165-6a418ee9adf2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
   )
 
 CategoryCard.create(
