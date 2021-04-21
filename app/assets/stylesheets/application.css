@@ -15,7 +15,7 @@
  */
 @import "bootstrap/scss/bootstrap";
 
-/*@import "pages/home";*/
+@import "pages/home";
 @import "components/cards";
 @import "components/navbar";
 
@@ -104,7 +104,7 @@
     padding: 12px !important;
   }
   .names {
-    // padding: 0!important;
+    /*// padding: 0!important;*/
   }
   .search-bar {
     padding-top:26px;
@@ -137,16 +137,16 @@ body {
   font-family: 'Playfair Display', ser;
   font-weight: 100;
   background-color: #F5F2F1;
-  // font-family: 'Noto Serif TC', serif;
+  /*// font-family: 'Noto Serif TC', serif;*/
 }
 
 h1 {
   font-size: 38px;
 }
 
-// .circle-color {
+/*// .circle-color {
 //   background-color:red;
-// }
+// }*/
 
 .card-selection {
   padding-left: 0px;
@@ -183,7 +183,7 @@ h1 {
 }
 
 .right-side-upper {
-  // margin:48px;
+  /*// margin:48px;*/
   margin-top:48px;
   margin-left: 0;
   width: 250px;
