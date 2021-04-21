@@ -16,8 +16,8 @@
 /*@import "bootstrap/scss/bootstrap";
 */
 /*@import "pages/home";*/
-@import "components/cards";
-@import "components/navbar";
+/*@import "components/cards";
+@import "components/navbar";*/
 
 @media only screen and (max-width: 1350px) {
   .css-card-grid {
@@ -227,4 +227,246 @@ a:hover {
 .random-number {
   font-size: 14px;
   padding-top: 4px;
+}
+
+
+
+
+/*COMPONENTS CARDS*/
+.create-card {
+  width:364px;
+  padding: 40px;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.card-image img {
+  width:364px;
+  height: 198px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.6s;
+}
+
+.card-image img:hover {
+  filter: brightness(1.2);
+}
+
+.card-content {
+  width: 364px;
+  height: 198px;
+  background-color:#F5F2F1;
+  padding: 27px;
+}
+
+h5 {
+  font-size: 26px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.bi-emoji-smile {
+  font-size: 36px;
+  padding-top: 4px;
+}
+
+.card-outer {
+  width:400px;
+}
+
+
+.category-card {
+  height: 280px;
+  width: 313px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.category-card img {
+  width:313px;
+  height: 234px;
+  position: relative;
+  top:0;
+  transition: top ease 0.5s, filter 0.6s;
+  /*// transition: filter 0.6s;*/
+}
+
+.category-card img:hover {
+  top:-15px;
+  filter: brightness(1.2);
+/*  // box-shadow: 2px 2px 2px 2px black*/
+}
+
+/*// .horizontal-scroll-wrapper {
+//   width: 480px;
+//   height: 1350px;
+//   overflow-y: auto;
+//   overflow-x: scroll;
+//   white-space: nowrap;
+// }
+
+// .horizontal-scroll-wrapper > div {
+//   width: 480px;
+//   height: 400px;
+// }
+
+// .horizontal-scroll-wrapper {
+//   transform: rotate(-90deg);
+//   transform-origin: right top;
+//   margin-top:-48px;
+// }
+
+// .horizontal-scroll-wrapper > div {
+//   transform: rotate(90deg);
+//   transform-origin: right top;
+// }
+
+// .horizontal-scroll-wrapper {
+//   transform:rotate(-90deg) translateY(-480px);
+// }*/
+
+.test {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  .card-outer {
+    display: inline-block;
+  }
+}
+
+.card-outer-first {
+  margin-top: 440px;
+}
+
+/*// .card-selection {
+//   height: 480px;
+//   padding: 0;
+//   margin-top: 50px;
+// }*/
+
+.card-image h6 {
+  position: absolute;
+  left: 296px;
+  top: 219px;
+  color: #717171;
+  z-index: 1;
+  background-color: white;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+/*NAV BAR*/
+
+.navvy {
+  height: 84px;
+  position:fixed;
+  top: 0;
+  background-color: #222222;
+  color:white;
+  width: 100%;
+  z-index: 100;
+}
+
+.large-text {
+  width: 600px;
+  font-size: 78px;
+  /*// padding-left: 50px;*/
+  text-align: center;
+}
+
+.searchy {
+  height: 142px;
+  background-color: #222222;
+}
+
+.search-bar {
+  padding-top: 38px;
+}
+
+.searching {
+  width: 95%;
+  background-color: black;
+  border-radius: 32px;
+  color:white;
+  font-size: 24px;
+  /*// outline: 0;*/
+  border: 1px solid black;
+  /*// margin-bottom:30px;*/
+}
+
+::placeholder {
+  color:#AAAAAA;
+}
+
+.header {
+  margin-top:84px;
+  height: 330px;
+  background-color: #222222;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 72px 24px 60px;
+}
+
+nav h5 {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+nav .bi-suit-heart {
+  position:absolute;
+  left: 10px;
+  font-size: 32px;
+}
+
+
+.for-right {
+  position:absolute;
+  right: 10px;
+  font-size: 32px;
+}
+
+.journal {
+  margin:12px;
+  padding-right: 20px;
+/*  // text-decoration: underline;
+  // text-underline-offset: 8px;*/
+  transition: top 300ms ease;
+  border-color: rgb(255, 255, 255) !important;
+  padding-bottom: 6px;
+  width: 58px;
+  margin-right: 32px;
+}
+
+.border-btm {
+  border-bottom: 1px solid white;
+  position: relative;
+  top: -14px;
+  width: 58px;
+  margin-left: 14px;
+  transition: top 250ms ease;
+}
+
+.journal:hover + .border-btm {
+    top:-24px;
+  }
+
+.journal:hover {
+      cursor: pointer;
+}
+
+.bi-suit-heart {
+  transition: 0.3s;
+
+}
+
+.bi-suit-heart:hover {
+  font-size: 26px;
+  cursor: pointer;
 }
