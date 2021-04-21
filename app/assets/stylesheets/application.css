@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap/scss/bootstrap";
-
-@import "pages/home";
+/*@import "bootstrap/scss/bootstrap";
+*/
+/*@import "pages/home";*/
 @import "components/cards";
 @import "components/navbar";
 
