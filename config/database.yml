@@ -52,3 +52,10 @@ test:
   username: thomastemple
   password:
   timeout: 5000
+
+
+production:
+  <<: *default
+  database: article-lounge-two
+  username: thomastemple
+  password: <%= ENV['PROJECT_DATABASE_PASSWORD'] %>
