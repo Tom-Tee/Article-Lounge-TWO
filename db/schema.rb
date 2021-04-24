@@ -16,17 +16,17 @@ ActiveRecord::Schema.define(version: 2021_03_28_101813) do
   enable_extension "plpgsql"
 
   create_table "card_selections", force: :cascade do |t|
-    t.string "url"
-    t.string "name"
-    t.string "price"
-    t.string "rated"
+    t.text "url"
+    t.text "name"
+    t.text "price"
+    t.text "rated"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "category_cards", force: :cascade do |t|
-    t.string "name"
-    t.string "url"
+    t.text "name"
+    t.text "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
