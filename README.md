@@ -38,7 +38,7 @@ I wanted to take a live website with an attractive design and copy it to the bes
 
 ![UI - Home](docs/cards.png)
 
-![UI - Home](docs/good.png)
+![UI - Home](docs/footer.png)
 
 
 
